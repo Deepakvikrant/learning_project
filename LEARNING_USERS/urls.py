@@ -24,3 +24,4 @@ urlpatterns = [
     path('user_app/', include('user_app.urls')),
     path('logout/', views.user_logout, name='logout'),
 ]
+#rrrr
