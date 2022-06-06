@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <nav class="navbar navbar-default nevbar-static-top">
+
+        <div class="container">
+
+            <ul class="nav navbar-nav">
+
+                <li><a class="navbar-brand" href="{% url 'index' %}">DJANJO HOME</a></li>
+                <li><a class="navbar-link" href="{% url 'admin:index' %}">ADMIN HOME</a></li>
+                <li><a class="nevbar-link" href="{% url 'user_app:register'%}">REGISTER PAGE</a></li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+    <div class="container">   
+         {% block body_block %}
+
+         
+
+
+
+        {% endblock %}
+    </div>
+
+    
+</body>
+</html>
